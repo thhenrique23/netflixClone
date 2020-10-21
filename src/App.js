@@ -15,7 +15,9 @@ export default () => {
       setMovieList(list);
 
       let originals = list.filter(item => 'originals' == item.slug),
-      randomOriginals = Math.floor(Math.random() * (originals[0].items.results.length - 1));
+      randomOriginals = Math.floor(Math.random() * (originals[0].items.results.length - 1)),
+      chosen = originals[0].items.results[randomOriginals];
+
       setFeaturedData(originals);
     }
 
