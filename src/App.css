@@ -12,5 +12,27 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .lists {
-  margin-top: -150px;
+  margin-top: -100px;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.linkedin a {
+  color: #C9C9C9;
+  text-decoration: none;
+}
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
