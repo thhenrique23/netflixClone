@@ -16,9 +16,9 @@ export default () => {
 
       let originals = list.filter(item => 'originals' == item.slug),
       randomOriginals = Math.floor(Math.random() * (originals[0].items.results.length - 1)),
-      chosen = originals[0].items.results[randomOriginals];
-
-      setFeaturedData(originals);
+      chosen = originals[0].items.results[randomOriginals],
+      chosenInfo = await api.getMovieInfo(chosen.id, 'tv');
+      setFeaturedData(chosenInfo);
     }
 
     loadAll();
